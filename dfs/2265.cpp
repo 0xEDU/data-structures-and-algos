@@ -1,8 +1,3 @@
-#include <vector>
-#include <cassert>
-
-using namespace std;
-
 struct TreeNode {
     int val;
     TreeNode *left;
@@ -37,19 +32,3 @@ public:
         return count;
     }
 };
-
-int main() {
-    TreeNode*root = new TreeNode(4);
-    root->left = new TreeNode(8);
-    root->right = new TreeNode(5);
-
-    root->left->left = new TreeNode(0);
-    root->left->right = new TreeNode(1);
-
-    root->right->right = new TreeNode(6);
-
-    Solution s;
-
-    int res = s.averageOfSubtree(root);
-    assert(res = 5);
-}

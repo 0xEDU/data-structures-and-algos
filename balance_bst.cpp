@@ -1,7 +1,3 @@
-#include <vector>
-
-using namespace std;
-
 struct TreeNode {
     int val;
     TreeNode *left;
@@ -40,15 +36,3 @@ public:
         return createBalancedBST(inorder, 0, size - 1);
     }
 };
-
-int main() {
-	TreeNode* root = new TreeNode(1);
-	root->right = new TreeNode(2);
-	root->right->right = new TreeNode(3);
-	root->right->right->right = new TreeNode(4);
-
-	Solution s;
-	s.balanceBST(root);
-
-	return 0;
-}

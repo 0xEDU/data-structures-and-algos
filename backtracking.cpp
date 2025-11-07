@@ -1,7 +1,3 @@
-#include <vector>
-
-using namespace std;
-
 class Solution {
     vector<vector<int>> result;
     vector<int> current;
@@ -32,8 +28,3 @@ public:
     }
 };
 
-int main() {
-    Solution s;
-
-    s.combine(4, 2);
-}
